@@ -1,0 +1,15 @@
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\Project.exe.config
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\Project.exe
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\Project.pdb
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\nunit.framework.xml
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\ThoughtWorks.Selenium.Core.xml
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\WebDriver.pdb
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\WebDriver.xml
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\WebDriver.Support.pdb
+C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\WebDriver.Support.xml
+C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\IndeedAutomation.csprojResolveAssemblyReference.cache
+C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\Project.exe
+C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\Project.pdb

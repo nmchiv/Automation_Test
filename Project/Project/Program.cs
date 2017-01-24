@@ -5,13 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Support.UI;
 
-namespace Project 
+namespace IndeedAutomation 
 {
     class Program
     {
 
         IWebDriver driver = new ChromeDriver(@"C:\Users\i57197\Downloads\chromedriver_win32");
+        //SelectElement select;
 
         public static void Main(string[] args)
         {
@@ -51,7 +53,17 @@ namespace Project
             driver.FindElement(By.Id(id));
         }
 
+        public void FindByClassAndClick(string className)
+        {
+            driver.FindElement(By.ClassName(className)).Click();
+        }
 
 
+        //public void SelectByText(string selText)
+        //{
+        //    select.SelectByText(selText);
+        //}
+
+        
     }
 }
