@@ -1,0 +1,11 @@
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\Tests.exe.config
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\Tests.exe
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\Tests.pdb
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\nunit.framework.dll
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\Project.exe
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\WebDriver.dll
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\Project.pdb
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\bin\Debug\nunit.framework.xml
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\obj\Debug\Tests.exe
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Tests\obj\Debug\Tests.pdb

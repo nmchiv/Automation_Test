@@ -13,3 +13,9 @@ C:\Users\i57197\Automation_Test\Project\Project\bin\Debug\WebDriver.Support.xml
 C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\IndeedAutomation.csprojResolveAssemblyReference.cache
 C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\Project.exe
 C:\Users\i57197\Automation_Test\Project\Project\obj\Debug\Project.pdb
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\bin\Debug\Project.exe.config
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\bin\Debug\Project.exe
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\bin\Debug\Project.pdb
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\obj\Debug\IndeedAutomation.csprojResolveAssemblyReference.cache
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\obj\Debug\Project.exe
+C:\Users\i57197\Desktop\Automation Stuff\Git Nitaya.Chiv\Automation_Test\Project\Project\obj\Debug\Project.pdb

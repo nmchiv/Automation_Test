@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B30C513-9CAA-4903-8B56-E51E4C56C10E}</ProjectGuid>
+    <ProjectGuid>{084650B6-33FF-480B-A32F-DD83B182EC5F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Project</RootNamespace>
-    <AssemblyName>Project</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,32 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mock-assembly">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\mock-assembly.exe</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework.tests">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunit.framework.tests.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.testdata">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunit.testdata.dll</HintPath>
-    </Reference>
-    <Reference Include="nunitlite">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunitlite.dll</HintPath>
-    </Reference>
-    <Reference Include="nunitlite-runner">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunitlite-runner.exe</HintPath>
-    </Reference>
-    <Reference Include="nunitlite.tests">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\nunitlite.tests.exe</HintPath>
-    </Reference>
-    <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>..\..\..\..\..\Downloads\selenium-dotnet-2.48.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
-    </Reference>
-    <Reference Include="slow-nunit-tests">
-      <HintPath>..\..\..\..\..\Downloads\NUnit-3.5.0\bin\net-4.5\slow-nunit-tests.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,27 +45,28 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>..\..\..\..\..\Downloads\selenium-dotnet-2.48.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\..\..\..\..\Downloads\selenium-dotnet-2.48.0\net40\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\..\..\..\..\Downloads\selenium-dotnet-2.48.0\net40\WebDriver.Support.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JobsPage.cs" />
-    <Compile Include="Preferences.cs" />
-    <Compile Include="Driver.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="Alerts.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="MySearches.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resume.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project\IndeedAutomation.csproj">
+      <Project>{0b30c513-9caa-4903-8b56-e51e4c56c10e}</Project>
+      <Name>IndeedAutomation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
