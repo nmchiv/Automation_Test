@@ -49,7 +49,8 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Alerts.cs" />
-    <Compile Include="HomePage.cs" />
+    <Compile Include="HomePageLinks.cs" />
+    <Compile Include="SignIn.cs" />
     <Compile Include="MySearches.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

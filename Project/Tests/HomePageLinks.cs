@@ -61,21 +61,11 @@ namespace IndeedAutomation
             
         }
 
-        [Test]
-        public void LogIn()
-        {
-            ClickID("userOptionsLabel");
-            EnterTxt("signin_email", "nmchivautomation@gmail.com");
-            EnterTxt("signin_password", "automation1");
-            Thread.Sleep(10000);
-            FindByClassAndClick("sg-btn");
-
-        }
 
         [Test]  
-        public void TestToTest()
+        public void PostYourResume()
         {
-
+            FindByClassAndClick("resume-promo-link");
         }
         
     }
