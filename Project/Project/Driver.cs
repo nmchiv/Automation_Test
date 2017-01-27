@@ -34,6 +34,11 @@ namespace IndeedAutomation
             driver.FindElement(By.Id(id)).SendKeys(jobName);
         }
 
+        public void FindByClassEnterText(string className, string email)
+        {
+            driver.FindElement(By.ClassName(className)).SendKeys(email);
+        }
+        
         public void ClearTxt(string id)
         {
             driver.FindElement(By.Id(id)).Clear();
@@ -57,6 +62,21 @@ namespace IndeedAutomation
         public void FindByClassAndClick(string className)
         {
             driver.FindElement(By.ClassName(className)).Click();
+        }
+
+        public void FindByXpathAndClick(string xpath)
+        {
+            driver.FindElement(By.Id(xpath)).Click();
+        }
+
+        public void FindByCSSAndClick(string selector)
+        {
+            driver.FindElement(By.CssSelector(selector)).Click();
+        }
+
+        public void ConfirmAlertPopUp()
+        {
+            driver.SwitchTo().Alert().Accept();
         }
 
 

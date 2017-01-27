@@ -44,12 +44,50 @@ namespace Tests
         }
 
         [Test]
-
-        public void RegisterNewAccount_Successful()
+        public void RegisterAndDeleteNewAccount_RegistrationSuccessful()
         {
+            ClickID("userOptionsLabel");
+            FindByClassAndClick("linkItem-title");
+            EnterTxt("register_email", "nmchivautomation+1@gmail.com");
+            EnterTxt("register_retype_email", "nmchivautomation+1@gmail.com");
+            EnterTxt("register_password", "automation1");
+            FindByClassAndClick("btn-signin");
+            ClickID("userOptionsLabel");
+            FindByCSSAndClick("#userOptions > div:nth-child(6) > a");
+            FindByCSSAndClick("#delete_account_form > a");
+            ConfirmAlertPopUp();           
 
         }
 
+        [Test]
+        public void RegistrationInfoEnteredIncorrectly_RegistrationFailure()
+        {
+            ClickID("userOptionsLabel");
+            FindByClassAndClick("linkItem-title");
+            EnterTxt("register_email", "nmchivautomation+1@gmail.com");
+            EnterTxt("register_retype_email", "nmchivautomation+1@gmail.comfail");
+            EnterTxt("register_password", "automation1");
+            FindByClassAndClick("btn-signin");
+
+        }
+
+        public void ResettingPassword_Successful()
+        {
+            ClickID("userOptionsLabel");
+            FindByClassEnterText("#forgotpasswordform > button", "nmchivautomation@gmail.com");
+        }
+
+        //[Test] //Is't working right now, could be that account is new, so it just logs in.
+        //public void RegisteringWithExistingUser_AccountAlreadyExistsFailure()
+        //{
+        //    ClickID("userOptionsLabel");
+        //    FindByClassAndClick("linkItem-title");
+        //    EnterTxt("register_email", "nmchivautomation@gmail.com");
+        //    EnterTxt("register_retype_email", "nmchivautomation@gmail.com");
+        //    EnterTxt("register_password", "automation1");
+        //    FindByClassAndClick("btn-signin");
+
+        //}
 
 
     }
