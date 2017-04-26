@@ -40,10 +40,11 @@ namespace IndeedAutomation
         public void FindJobsLink()
         {
             ClickID("jobsLink");
+            //Assert.IsTrue(JobsPage.VerifyLogo, "Failed to verify the Indeed Resume logo.");
 
         }
 
-    [Test]
+        [Test]
         public void FindResumesLink()
         {
             ClickID("rezLink");

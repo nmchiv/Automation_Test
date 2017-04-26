@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IndeedAutomation;
+using Project;
 
 namespace Tests
 {
@@ -16,12 +17,12 @@ namespace Tests
             GoToURL("https://www.indeed.com/");
         }
 
-        //[TearDown]
-        //public void Reset()
-        //{
+        [TearDown]
+        public void Reset()
+        {
 
-        //    CloseWindow();
-        //}
+            CloseWindow();
+        }
 
         [Test]
         public void LogInWithInvalidUser_WillCauseLogInFailure()
@@ -30,7 +31,8 @@ namespace Tests
             EnterTxt("signin_email", "nmchivautomation@gmail.com");
             EnterTxt("signin_password", "automationIncorrect");
             //Thread.Sleep(10000);
-            FindByClassAndClick("sg-btn");
+            //FindByClassAndClick("sg-btn");
+            //Assert.IsTrue(SignInPage.readText, "Invalid login failed.");
         }
 
         [Test]
@@ -53,9 +55,10 @@ namespace Tests
             EnterTxt("register_password", "automation1");
             FindByClassAndClick("btn-signin");
             ClickID("userOptionsLabel");
-            FindByCSSAndClick("#userOptions > div:nth-child(6) > a");
+            FindByCSSAndClick("#userOptions > div:nth-child(6) > a"); //Only works if account is unconfirmed.
             FindByCSSAndClick("#delete_account_form > a");
-            ConfirmAlertPopUp();           
+            ConfirmAlertPopUp();
+            Assert.IsTrue(SignInPage.IsAt, "Failed to delete account.");      
 
         }
 
@@ -71,11 +74,12 @@ namespace Tests
 
         }
 
-        public void ResettingPassword_Successful()
-        {
-            ClickID("userOptionsLabel");
-            FindByClassEnterText("#forgotpasswordform > button", "nmchivautomation@gmail.com");
-        }
+        //[Test]
+        //public void ResettingPassword_Successful()
+        //{
+        //    ClickID("userOptionsLabel");
+        //    FindByCSSAndClick("#a.linkItem.linkItem-chevron.registrationLink");
+        //}
 
         //[Test] //Is't working right now, could be that account is new, so it just logs in.
         //public void RegisteringWithExistingUser_AccountAlreadyExistsFailure()
@@ -88,6 +92,8 @@ namespace Tests
         //    FindByClassAndClick("btn-signin");
 
         //}
+
+
 
 
     }
